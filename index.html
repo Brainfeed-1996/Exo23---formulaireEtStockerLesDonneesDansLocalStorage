@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 23</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>
+        Formulaire de contact avec les données stockées dans le localStorage
+    </h2>
+    <form action="">
+        <fieldset>
+            <legend><strong> Genre</strong></legend>
+            <p>
+                <input type="radio" name="genre" id="homme" value="homme"/>
+                <label for="homme">Homme</label>
+            </p>
+            <p>
+                <input type="radio" name="genre" id="femme" value="femme"/>
+                <label for="femme">Femme</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Nom et Prénom</strong></legend>
+            <p>
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom" placeholder="Nom" required/>
+            </p>
+            <p>
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Prénom" required/>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Commentaire</strong></legend>
+            <textarea 
+                name="texteFormulaire" 
+                id="texteFormulaire" 
+                cols="30" 
+                rows="10"
+            ></textarea>
+        </fieldset>
+    </form>
+    <button>Envoyer formulaire</button>
+
+    <h2>Données stockées dans le localStorage</h2>
+
+    <p>Le genre est : <span id="leGenre"></span></p>
+    <p>Le nom est : <span id="leNom"></span></p>
+    <p>Le prénom est : <span id="lePrenom"></span></p>
+    <p>Le texte que vous avez entré : <span id="leTexteFormulaire"></span></p>
+</body>
+</html>
